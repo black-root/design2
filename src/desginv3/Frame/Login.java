@@ -30,24 +30,29 @@ public class Login extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lblMenu = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jPanel1 = new javax.swing.JPanel();
         btnCompras = new javax.swing.JButton();
+        btnReportes = new javax.swing.JButton();
+        btnVenta = new javax.swing.JButton();
+        btnProveedores = new javax.swing.JButton();
+        btnAdministracion = new javax.swing.JButton();
+        btnProductos = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        txtBuscar = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -77,7 +82,6 @@ public class Login extends javax.swing.JFrame {
         jTextField2.setBorder(null);
         jpIngreso.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 170, 40));
         jpIngreso.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 230, 20));
-        jpIngreso.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 230, 20));
 
         jLabel5.setBackground(new java.awt.Color(238, 112, 82));
         jLabel5.setFont(new java.awt.Font("Liberation Sans Narrow", 1, 18)); // NOI18N
@@ -116,6 +120,13 @@ public class Login extends javax.swing.JFrame {
         jButton1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/Enter_ON.png"))); // NOI18N
         jpIngreso.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 470, -1, -1));
 
+        jLabel7.setBackground(new java.awt.Color(238, 112, 83));
+        jLabel7.setFont(new java.awt.Font("Liberation Sans Narrow", 3, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(238, 112, 83));
+        jLabel7.setText("Tienda ABC");
+        jpIngreso.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, -1, -1));
+        jpIngreso.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 230, 20));
+
         getContentPane().add(jpIngreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 680));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -123,25 +134,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(760, 530));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/icons8_Handshake_96px.png"))); // NOI18N
-        jLabel6.setPreferredSize(new java.awt.Dimension(128, 128));
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 190, 180));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/printer-icon.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 190, 180));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/icons8_Maintenance_96px.png"))); // NOI18N
-        jLabel9.setPreferredSize(new java.awt.Dimension(128, 128));
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 340, 190, 180));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/icons8_Idea_96px.png"))); // NOI18N
-        jLabel10.setPreferredSize(new java.awt.Dimension(128, 128));
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, 190, 180));
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/thefreeforty_shop-128.png"))); // NOI18N
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 190, 180));
-
-        btnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/shopping-cart-icon.png"))); // NOI18N
+        btnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/icons8_Handshake_96px.png"))); // NOI18N
         btnCompras.setBorder(null);
         btnCompras.setContentAreaFilled(false);
         btnCompras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -155,9 +148,104 @@ public class Login extends javax.swing.JFrame {
                 btnComprasMouseExited(evt);
             }
         });
-        jPanel1.add(btnCompras, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 100, 190, 180));
+        btnCompras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnCompras, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 190, 180));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 790, 560));
+        btnReportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/print2.png"))); // NOI18N
+        btnReportes.setBorder(null);
+        btnReportes.setContentAreaFilled(false);
+        btnReportes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnReportes.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnReportesMouseMoved(evt);
+            }
+        });
+        btnReportes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnReportesMouseExited(evt);
+            }
+        });
+        jPanel1.add(btnReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 190, 180));
+
+        btnVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/venta-128px.png"))); // NOI18N
+        btnVenta.setBorder(null);
+        btnVenta.setContentAreaFilled(false);
+        btnVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVenta.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnVentaMouseMoved(evt);
+            }
+        });
+        btnVenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnVentaMouseExited(evt);
+            }
+        });
+        jPanel1.add(btnVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 190, 180));
+
+        btnProveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/provedor-128px.png"))); // NOI18N
+        btnProveedores.setBorder(null);
+        btnProveedores.setContentAreaFilled(false);
+        btnProveedores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnProveedores.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnProveedoresMouseMoved(evt);
+            }
+        });
+        btnProveedores.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnProveedoresMouseExited(evt);
+            }
+        });
+        btnProveedores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProveedoresActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnProveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 190, 180));
+
+        btnAdministracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/icons8_Maintenance_96px.png"))); // NOI18N
+        btnAdministracion.setBorder(null);
+        btnAdministracion.setContentAreaFilled(false);
+        btnAdministracion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAdministracion.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnAdministracionMouseMoved(evt);
+            }
+        });
+        btnAdministracion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAdministracionMouseExited(evt);
+            }
+        });
+        jPanel1.add(btnAdministracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, 190, 180));
+
+        btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/invetario-128px.png"))); // NOI18N
+        btnProductos.setBorder(null);
+        btnProductos.setContentAreaFilled(false);
+        btnProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnProductos.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnProductosMouseMoved(evt);
+            }
+        });
+        btnProductos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnProductosMouseExited(evt);
+            }
+        });
+        btnProductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProductosActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, 190, 180));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 790, 530));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -181,24 +269,41 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 40, 40));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 790, 60));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 790, 50));
 
-        jPanel3.setBackground(new java.awt.Color(238, 112, 82));
-        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel3.setForeground(new java.awt.Color(238, 112, 82));
+        jPanel3.setBackground(new java.awt.Color(183, 101, 62));
+        jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanel3.setForeground(new java.awt.Color(153, 62, 13));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 786, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 56, Short.MAX_VALUE)
-        );
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel8.setFont(new java.awt.Font("Liberation Sans Narrow", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/desginv3/Image/buscar.png"))); // NOI18N
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 50, 40));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 790, 60));
+        jSeparator2.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 210, 20));
+
+        txtBuscar.setFont(new java.awt.Font("Liberation Sans Narrow", 1, 18)); // NOI18N
+        txtBuscar.setForeground(new java.awt.Color(153, 153, 153));
+        txtBuscar.setText("  buscar");
+        txtBuscar.setToolTipText("");
+        txtBuscar.setBorder(null);
+        txtBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBuscarActionPerformed(evt);
+            }
+        });
+        jPanel3.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 190, 30));
+
+        jLabel9.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel9.setFont(new java.awt.Font("Liberation Sans Narrow", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("INICIO");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 790, 80));
 
         pack();
         setLocationRelativeTo(null);
@@ -230,6 +335,62 @@ public class Login extends javax.swing.JFrame {
     private void btnComprasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnComprasMouseExited
          btnCompras.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255,255,255)));
     }//GEN-LAST:event_btnComprasMouseExited
+
+    private void btnReportesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReportesMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReportesMouseExited
+
+    private void btnReportesMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReportesMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReportesMouseMoved
+
+    private void btnVentaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVentaMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVentaMouseMoved
+
+    private void btnVentaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVentaMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVentaMouseExited
+
+    private void btnProveedoresMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProveedoresMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProveedoresMouseMoved
+
+    private void btnProveedoresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProveedoresMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProveedoresMouseExited
+
+    private void btnAdministracionMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdministracionMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAdministracionMouseMoved
+
+    private void btnAdministracionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdministracionMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAdministracionMouseExited
+
+    private void btnProductosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProductosMouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProductosMouseMoved
+
+    private void btnProductosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProductosMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProductosMouseExited
+
+    private void btnComprasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnComprasActionPerformed
+
+    private void btnProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProductosActionPerformed
+
+    private void btnProveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedoresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProveedoresActionPerformed
+
+    private void txtBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBuscarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -267,19 +428,22 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAdministracion;
     private javax.swing.JButton btnCompras;
+    private javax.swing.JButton btnProductos;
+    private javax.swing.JButton btnProveedores;
+    private javax.swing.JButton btnReportes;
+    private javax.swing.JButton btnVenta;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -287,8 +451,10 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JPanel jpIngreso;
     private javax.swing.JLabel lblMenu;
+    private javax.swing.JTextField txtBuscar;
     // End of variables declaration//GEN-END:variables
 }
